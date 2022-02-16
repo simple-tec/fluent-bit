@@ -1,0 +1,13 @@
+# Target labels
+ onigmo
+# Source files and their labels
+/app/code/fluent-bit-1.2.0/build/CMakeFiles/onigmo
+/app/code/fluent-bit-1.2.0/build/CMakeFiles/onigmo.rule
+/app/code/fluent-bit-1.2.0/build/CMakeFiles/onigmo-complete.rule
+/app/code/fluent-bit-1.2.0/build/onigmo-prefix/src/onigmo-stamp/onigmo-install.rule
+/app/code/fluent-bit-1.2.0/build/onigmo-prefix/src/onigmo-stamp/onigmo-mkdir.rule
+/app/code/fluent-bit-1.2.0/build/onigmo-prefix/src/onigmo-stamp/onigmo-download.rule
+/app/code/fluent-bit-1.2.0/build/onigmo-prefix/src/onigmo-stamp/onigmo-update.rule
+/app/code/fluent-bit-1.2.0/build/onigmo-prefix/src/onigmo-stamp/onigmo-patch.rule
+/app/code/fluent-bit-1.2.0/build/onigmo-prefix/src/onigmo-stamp/onigmo-configure.rule
+/app/code/fluent-bit-1.2.0/build/onigmo-prefix/src/onigmo-stamp/onigmo-build.rule

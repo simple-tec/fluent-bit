@@ -1,0 +1,220 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_58597/fast"
+/usr/bin/make -f CMakeFiles/cmTC_58597.dir/build.make CMakeFiles/cmTC_58597.dir/build
+make[1]: Entering directory '/app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_58597.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -D__FILENAME__='"build/CMakeFiles/CMakeTmp/CheckSymbolExists.c"'  -fPIE   -o CMakeFiles/cmTC_58597.dir/CheckSymbolExists.c.o   -c /app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_58597
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58597.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -D__FILENAME__='"$(subst /app/code/fluent-bit-1.2.0/,,$(abspath $<))"'     -rdynamic CMakeFiles/cmTC_58597.dir/CheckSymbolExists.c.o  -o cmTC_58597 
+CMakeFiles/cmTC_58597.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_58597.dir/build.make:97: recipe for target 'cmTC_58597' failed
+make[1]: *** [cmTC_58597] Error 1
+make[1]: Leaving directory '/app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_58597/fast' failed
+make: *** [cmTC_58597/fast] Error 2
+
+File /app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ac56d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ac56d.dir/build.make CMakeFiles/cmTC_ac56d.dir/build
+make[1]: Entering directory '/app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ac56d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -D__FILENAME__='"/usr/share/cmake-3.10/Modules/CheckFunctionExists.c"' -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE   -o CMakeFiles/cmTC_ac56d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ac56d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac56d.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -D__FILENAME__='"$(subst /app/code/fluent-bit-1.2.0/,,$(abspath $<))"' -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_ac56d.dir/CheckFunctionExists.c.o  -o cmTC_ac56d -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_ac56d.dir/build.make:97: recipe for target 'cmTC_ac56d' failed
+make[1]: *** [cmTC_ac56d] Error 1
+make[1]: Leaving directory '/app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ac56d/fast' failed
+make: *** [cmTC_ac56d/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test MSGPACK_ENABLE_GCC_CXX_ATOMIC failed with the following output:
+Change Dir: /app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_aca32/fast"
+/usr/bin/make -f CMakeFiles/cmTC_aca32.dir/build.make CMakeFiles/cmTC_aca32.dir/build
+make[1]: Entering directory '/app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_aca32.dir/src.cxx.o
+/usr/bin/c++    -DMSGPACK_DEFAULT_API_VERSION=3 -std=c++98  -DMSGPACK_ENABLE_GCC_CXX_ATOMIC -fPIE   -o CMakeFiles/cmTC_aca32.dir/src.cxx.o -c /app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp/src.cxx
+/app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp/src.cxx:2:10: fatal error: bits/atomicity.h: No such file or directory
+ #include <bits/atomicity.h>
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_aca32.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_aca32.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_aca32.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_aca32/fast' failed
+make: *** [cmTC_aca32/fast] Error 2
+
+Source file was:
+
+#include <bits/atomicity.h>
+int atomic_sub(int i) { return __gnu_cxx::__exchange_and_add(&i, -1) - 1; }
+int atomic_add(int i) { return __gnu_cxx::__exchange_and_add(&i, 1) + 1; }
+int main(int argc, char * argv[])
+{
+    atomic_sub(1);
+    atomic_add(1);
+}
+
+Performing C SOURCE FILE Test HAVE_KQUEUE failed with the following output:
+Change Dir: /app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_37cd4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_37cd4.dir/build.make CMakeFiles/cmTC_37cd4.dir/build
+make[1]: Entering directory '/app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_37cd4.dir/src.c.o
+/usr/bin/cc   -Wall -D__FILENAME__='"build/CMakeFiles/CMakeTmp/src.c"' -DHAVE_KQUEUE -fPIE   -o CMakeFiles/cmTC_37cd4.dir/src.c.o   -c /app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp/src.c
+/app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp/src.c:2:12: fatal error: sys/event.h: No such file or directory
+   #include <sys/event.h>
+            ^~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_37cd4.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_37cd4.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_37cd4.dir/src.c.o] Error 1
+make[1]: Leaving directory '/app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_37cd4/fast' failed
+make: *** [cmTC_37cd4/fast] Error 2
+
+Source file was:
+
+  #include <sys/event.h>
+  int main() {
+     return kqueue();
+  }
+Performing C SOURCE FILE Test FLB_HAVE_VALGRIND failed with the following output:
+Change Dir: /app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_10602/fast"
+/usr/bin/make -f CMakeFiles/cmTC_10602.dir/build.make CMakeFiles/cmTC_10602.dir/build
+make[1]: Entering directory '/app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_10602.dir/src.c.o
+/usr/bin/cc   -Wall -D__FILENAME__='"build/CMakeFiles/CMakeTmp/src.c"' -DFLB_HAVE_VALGRIND -fPIE   -o CMakeFiles/cmTC_10602.dir/src.c.o   -c /app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp/src.c
+/app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp/src.c:2:12: fatal error: valgrind/valgrind.h: No such file or directory
+   #include <valgrind/valgrind.h>
+            ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_10602.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_10602.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_10602.dir/src.c.o] Error 1
+make[1]: Leaving directory '/app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_10602/fast' failed
+make: *** [cmTC_10602/fast] Error 2
+
+Source file was:
+
+  #include <valgrind/valgrind.h>
+  int main() {
+     return 0;
+  }
+Performing C SOURCE FILE Test FLB_HAVE_CLOCK_GET_TIME failed with the following output:
+Change Dir: /app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_968e2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_968e2.dir/build.make CMakeFiles/cmTC_968e2.dir/build
+make[1]: Entering directory '/app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_968e2.dir/src.c.o
+/usr/bin/cc   -Wall -D__FILENAME__='"build/CMakeFiles/CMakeTmp/src.c"' -DFLB_HAVE_CLOCK_GET_TIME -fPIE   -o CMakeFiles/cmTC_968e2.dir/src.c.o   -c /app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp/src.c
+/app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp/src.c:2:12: fatal error: mach/clock.h: No such file or directory
+   #include <mach/clock.h>
+            ^~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_968e2.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_968e2.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_968e2.dir/src.c.o] Error 1
+make[1]: Leaving directory '/app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_968e2/fast' failed
+make: *** [cmTC_968e2/fast] Error 2
+
+Source file was:
+
+  #include <mach/clock.h>
+  #include <mach/mach.h>
+  int main() {
+      clock_serv_t cclock;
+      mach_timespec_t mts;
+      host_get_clock_service(mach_host_self(), CALENDAR_CLOCK, &cclock);
+      clock_get_time(cclock, &mts);
+      return mach_port_deallocate(mach_task_self(), cclock);
+  }
+Determining if the accept4 exist failed with the following output:
+Change Dir: /app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b7040/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b7040.dir/build.make CMakeFiles/cmTC_b7040.dir/build
+make[1]: Entering directory '/app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b7040.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -D__FILENAME__='"build/CMakeFiles/CMakeTmp/CheckSymbolExists.c"'  -fPIE   -o CMakeFiles/cmTC_b7040.dir/CheckSymbolExists.c.o   -c /app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘accept4’ undeclared (first use in this function); did you mean ‘accept’?
+   return ((int*)(&accept4))[argc];
+                   ^~~~~~~
+                   accept
+/app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_b7040.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_b7040.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_b7040.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b7040/fast' failed
+make: *** [cmTC_b7040/fast] Error 2
+
+File /app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/socket.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef accept4
+  return ((int*)(&accept4))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C SOURCE FILE Test MK_HAVE_VALGRIND failed with the following output:
+Change Dir: /app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3115b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3115b.dir/build.make CMakeFiles/cmTC_3115b.dir/build
+make[1]: Entering directory '/app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3115b.dir/src.c.o
+/usr/bin/cc   -Wall -D__FILENAME__='"build/CMakeFiles/CMakeTmp/src.c"' -std=gnu99 -Wall -Wextra -D__FILENAME__='"build/CMakeFiles/CMakeTmp/src.c"' -DMK_HAVE_VALGRIND -fPIE   -o CMakeFiles/cmTC_3115b.dir/src.c.o   -c /app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp/src.c
+/app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp/src.c:2:12: fatal error: valgrind/valgrind.h: No such file or directory
+   #include <valgrind/valgrind.h>
+            ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_3115b.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_3115b.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_3115b.dir/src.c.o] Error 1
+make[1]: Leaving directory '/app/code/fluent-bit-1.2.0/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_3115b/fast' failed
+make: *** [cmTC_3115b/fast] Error 2
+
+Source file was:
+
+  #include <valgrind/valgrind.h>
+  int main() {
+     return 0;
+  }

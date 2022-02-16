@@ -1,0 +1,13 @@
+# Target labels
+ luajit
+# Source files and their labels
+/app/code/fluent-bit-1.2.0/build/CMakeFiles/luajit
+/app/code/fluent-bit-1.2.0/build/CMakeFiles/luajit.rule
+/app/code/fluent-bit-1.2.0/build/CMakeFiles/luajit-complete.rule
+/app/code/fluent-bit-1.2.0/build/luajit-prefix/src/luajit-stamp/luajit-install.rule
+/app/code/fluent-bit-1.2.0/build/luajit-prefix/src/luajit-stamp/luajit-mkdir.rule
+/app/code/fluent-bit-1.2.0/build/luajit-prefix/src/luajit-stamp/luajit-download.rule
+/app/code/fluent-bit-1.2.0/build/luajit-prefix/src/luajit-stamp/luajit-update.rule
+/app/code/fluent-bit-1.2.0/build/luajit-prefix/src/luajit-stamp/luajit-patch.rule
+/app/code/fluent-bit-1.2.0/build/luajit-prefix/src/luajit-stamp/luajit-configure.rule
+/app/code/fluent-bit-1.2.0/build/luajit-prefix/src/luajit-stamp/luajit-build.rule

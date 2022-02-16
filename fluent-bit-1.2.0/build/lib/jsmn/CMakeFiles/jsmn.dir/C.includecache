@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/app/code/fluent-bit-1.2.0/lib/jsmn/jsmn.c
+jsmn.h
+/app/code/fluent-bit-1.2.0/lib/jsmn/jsmn.h
+
+/app/code/fluent-bit-1.2.0/lib/jsmn/jsmn.h
+stddef.h
+-
+

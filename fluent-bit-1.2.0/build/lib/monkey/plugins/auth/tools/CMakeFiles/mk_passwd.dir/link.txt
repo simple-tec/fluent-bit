@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -D__FILENAME__='"$(subst /app/code/fluent-bit-1.2.0/,,$(abspath $<))"' -std=gnu99 -Wall -Wextra -D__FILENAME__='"$(subst /app/code/fluent-bit-1.2.0/,,$(abspath $<))"' -g  -rdynamic CMakeFiles/mk_passwd.dir/__/sha1.c.o CMakeFiles/mk_passwd.dir/__/base64.c.o CMakeFiles/mk_passwd.dir/mk_passwd.c.o  -o ../../../../../bin/mk_passwd 

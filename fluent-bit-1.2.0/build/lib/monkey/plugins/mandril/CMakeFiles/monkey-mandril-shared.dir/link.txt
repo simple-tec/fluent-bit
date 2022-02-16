@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC  -Wall -D__FILENAME__='"$(subst /app/code/fluent-bit-1.2.0/,,$(abspath $<))"' -std=gnu99 -Wall -Wextra -D__FILENAME__='"$(subst /app/code/fluent-bit-1.2.0/,,$(abspath $<))"' -g  -shared -Wl,-soname,monkey-mandril.so -o ../../../monkey-mandril.so CMakeFiles/monkey-mandril-shared.dir/mandril.c.o 

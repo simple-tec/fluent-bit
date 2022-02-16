@@ -1,0 +1,14 @@
+prefix=/app/code/fluent-bit-1.2.0/build
+exec_prefix=/app/code/fluent-bit-1.2.0/build
+libdir=/app/code/fluent-bit-1.2.0/build/lib
+includedir=/app/code/fluent-bit-1.2.0/build/include
+datarootdir=/app/code/fluent-bit-1.2.0/build/share
+datadir=/app/code/fluent-bit-1.2.0/build/share
+
+Name: onigmo
+Description: Regular expression library
+Version: 6.1.3
+Requires:
+Libs: -L${libdir} -lonigmo
+Cflags: -I${includedir}
+

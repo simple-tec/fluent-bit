@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/monkey/include/monkey/mk_core/external/wingetopt.h
+wchar.h
+-
+string.h
+-
+limits.h
+-
+stdlib.h
+-
+stdio.h
+-
+
+../lib/monkey/include/monkey/mk_core/mk_core_info.h
+
+../lib/monkey/include/monkey/mk_core/mk_getopt.h
+mk_core_info.h
+../lib/monkey/include/monkey/mk_core/mk_core_info.h
+getopt.h
+-
+external/wingetopt.h
+../lib/monkey/include/monkey/mk_core/external/wingetopt.h
+
+/app/code/fluent-bit-1.2.0/tools/xxd-c/xxd-c.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+monkey/mk_core/mk_getopt.h
+-
+

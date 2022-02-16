@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/app/code/fluent-bit-1.2.0/lib/chunkio/deps/crc32/crc32.c
+crc32.h
+/app/code/fluent-bit-1.2.0/lib/chunkio/deps/crc32/crc32.h
+stdlib.h
+-
+stdint.h
+-
+machine/endian.h
+-
+libkern/OSByteOrder.h
+-
+sys/endian.h
+-
+endian.h
+-
+
+/app/code/fluent-bit-1.2.0/lib/chunkio/deps/crc32/crc32.h
+stdlib.h
+-
+stdint.h
+-
+

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/monkey/deps/rbtree/rbtree.h
+stdlib.h
+-
+assert.h
+-
+
+/app/code/fluent-bit-1.2.0/lib/monkey/deps/rbtree/rbtree.c
+rbtree.h
+-
+stdlib.h
+-
+string.h
+-
+

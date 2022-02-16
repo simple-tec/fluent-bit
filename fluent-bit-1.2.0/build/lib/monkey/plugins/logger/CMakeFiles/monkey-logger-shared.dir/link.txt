@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC  -Wall -D__FILENAME__='"$(subst /app/code/fluent-bit-1.2.0/,,$(abspath $<))"' -std=gnu99 -Wall -Wextra -D__FILENAME__='"$(subst /app/code/fluent-bit-1.2.0/,,$(abspath $<))"' -g  -shared -Wl,-soname,monkey-logger.so -o ../../../monkey-logger.so CMakeFiles/monkey-logger-shared.dir/pointers.c.o CMakeFiles/monkey-logger-shared.dir/logger.c.o 

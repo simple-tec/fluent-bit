@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/app/code/fluent-bit-1.2.0/build/CMakeFiles/onigmo"
+		},
+		{
+			"file" : "/app/code/fluent-bit-1.2.0/build/CMakeFiles/onigmo.rule"
+		},
+		{
+			"file" : "/app/code/fluent-bit-1.2.0/build/CMakeFiles/onigmo-complete.rule"
+		},
+		{
+			"file" : "/app/code/fluent-bit-1.2.0/build/onigmo-prefix/src/onigmo-stamp/onigmo-install.rule"
+		},
+		{
+			"file" : "/app/code/fluent-bit-1.2.0/build/onigmo-prefix/src/onigmo-stamp/onigmo-mkdir.rule"
+		},
+		{
+			"file" : "/app/code/fluent-bit-1.2.0/build/onigmo-prefix/src/onigmo-stamp/onigmo-download.rule"
+		},
+		{
+			"file" : "/app/code/fluent-bit-1.2.0/build/onigmo-prefix/src/onigmo-stamp/onigmo-update.rule"
+		},
+		{
+			"file" : "/app/code/fluent-bit-1.2.0/build/onigmo-prefix/src/onigmo-stamp/onigmo-patch.rule"
+		},
+		{
+			"file" : "/app/code/fluent-bit-1.2.0/build/onigmo-prefix/src/onigmo-stamp/onigmo-configure.rule"
+		},
+		{
+			"file" : "/app/code/fluent-bit-1.2.0/build/onigmo-prefix/src/onigmo-stamp/onigmo-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"onigmo"
+		],
+		"name" : "onigmo"
+	}
+}

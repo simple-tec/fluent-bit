@@ -1,0 +1,13 @@
+# Target labels
+ backtrace
+# Source files and their labels
+/app/code/fluent-bit-1.2.0/build/CMakeFiles/backtrace
+/app/code/fluent-bit-1.2.0/build/CMakeFiles/backtrace.rule
+/app/code/fluent-bit-1.2.0/build/CMakeFiles/backtrace-complete.rule
+/app/code/fluent-bit-1.2.0/build/backtrace-prefix/src/backtrace-stamp/backtrace-install.rule
+/app/code/fluent-bit-1.2.0/build/backtrace-prefix/src/backtrace-stamp/backtrace-mkdir.rule
+/app/code/fluent-bit-1.2.0/build/backtrace-prefix/src/backtrace-stamp/backtrace-download.rule
+/app/code/fluent-bit-1.2.0/build/backtrace-prefix/src/backtrace-stamp/backtrace-update.rule
+/app/code/fluent-bit-1.2.0/build/backtrace-prefix/src/backtrace-stamp/backtrace-patch.rule
+/app/code/fluent-bit-1.2.0/build/backtrace-prefix/src/backtrace-stamp/backtrace-configure.rule
+/app/code/fluent-bit-1.2.0/build/backtrace-prefix/src/backtrace-stamp/backtrace-build.rule

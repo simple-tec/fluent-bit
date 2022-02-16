@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/app/code/fluent-bit-1.2.0/build/CMakeFiles/luajit"
+		},
+		{
+			"file" : "/app/code/fluent-bit-1.2.0/build/CMakeFiles/luajit.rule"
+		},
+		{
+			"file" : "/app/code/fluent-bit-1.2.0/build/CMakeFiles/luajit-complete.rule"
+		},
+		{
+			"file" : "/app/code/fluent-bit-1.2.0/build/luajit-prefix/src/luajit-stamp/luajit-install.rule"
+		},
+		{
+			"file" : "/app/code/fluent-bit-1.2.0/build/luajit-prefix/src/luajit-stamp/luajit-mkdir.rule"
+		},
+		{
+			"file" : "/app/code/fluent-bit-1.2.0/build/luajit-prefix/src/luajit-stamp/luajit-download.rule"
+		},
+		{
+			"file" : "/app/code/fluent-bit-1.2.0/build/luajit-prefix/src/luajit-stamp/luajit-update.rule"
+		},
+		{
+			"file" : "/app/code/fluent-bit-1.2.0/build/luajit-prefix/src/luajit-stamp/luajit-patch.rule"
+		},
+		{
+			"file" : "/app/code/fluent-bit-1.2.0/build/luajit-prefix/src/luajit-stamp/luajit-configure.rule"
+		},
+		{
+			"file" : "/app/code/fluent-bit-1.2.0/build/luajit-prefix/src/luajit-stamp/luajit-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"luajit"
+		],
+		"name" : "luajit"
+	}
+}
