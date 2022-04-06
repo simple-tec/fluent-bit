@@ -607,7 +607,7 @@ static int merge_meta(struct flb_kube_meta *meta, struct flb_kube *ctx,
                 strncmp(k.via.str.ptr, "containers", 10) == 0) {
 				containers_val = spec_val.via.map.ptr[i].val; // get "containers" base obj
 				containers_found = FLB_TRUE;
-				map_size += 4;
+				map_size += 2;
 			}
         }
     }
@@ -633,10 +633,11 @@ static int merge_meta(struct flb_kube_meta *meta, struct flb_kube *ctx,
         msgpack_pack_str_body(&mp_pck, meta->namespace, meta->namespace_len);
     }
 
-    // jian.jone add three field
+    // jian.jone add two field
 	if(containers_found == FLB_TRUE ) {
 		 extract_containers_envs(containers_val, cluster, project);		
     }
+	printf("%s, %s\n", cluster, project);
     if (1) {
         int len = strlen(cluster);
         msgpack_pack_str(&mp_pck, 7);
